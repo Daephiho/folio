@@ -52,23 +52,15 @@
             padding: 50px 10px 20px 15px;
         }
 
-        #btn1 {
-            position: absolute;
-            top: 520px;
-            right: 380px;
+        #btn1, #btn2, #btn3 {
+            float: left;
+            width: 150px;
+            margin: 10px;
         }
 
-        #btn2 {
-            position: absolute;
-            top: 520px;
-            right: 190px;
-        }
-
-        #btn3 {
-            position: absolute;
-            top: 520px;
-            right: 0px;
-        }
+        #btn1 img, #btn2 img, #btn3 img {
+            width: 150px;
+        } 
 
         #btn1:hover img, #btn2:hover img, #btn3:hover img  {
             cursor: pointer;
