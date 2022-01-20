@@ -4,96 +4,8 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Portfolio</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
-
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            margin-bottom: 100px;
-        }
-
-        #main_div {
-            width: 1200px;
-            height: 600px;
-            display: flex;
-            margin-left: 100px;
-            margin-top: 100px;
-            border: 1px solid grey;
-            border-radius: 20px;
-        }
-
-        #box1 {
-            flex: 1;
-            display: flex;
-            margin: 20px;
-            padding: 20px;
-            border-right: 1px solid grey;
-        }
-
-        #info span {
-            color: navy;
-            margin-right: 10px;
-        }
-
-        #git {
-            color: navy;
-            text-align: center;
-        }
-
-        #know {
-            margin-top: 150px;
-            margin-left: 40px;
-        }
-
-        #know span {
-            background-color: grey;
-            color: #fff;
-            border-radius: 5px;
-            margin: 5px;
-            padding: 2px;
-        }
-
-        #box2 {
-            flex: 1;
-            margin: 20px 15px;
-            padding: 50px 10px 20px 15px;
-        }
-
-        #btn1 {
-            position: absolute;
-            top: 520px;
-            right: 380px;
-        }
-
-        #btn2 {
-            position: absolute;
-            top: 520px;
-            right: 190px;
-        }
-
-        #btn3 {
-            position: absolute;
-            top: 520px;
-            right: 0px;
-        }
-
-        #btn1:hover img, #btn2:hover img, #btn3:hover img  {
-            cursor: pointer;
-            transform: scale(1.1);
-            transition: all 0.2s ease-in-out;
-        }
-
-        #prj_1, #prj_2, #prj_3 {
-            display: none;
-            margin-left: 250px;
-        }
-
-        object {
-            border-bottom: 3px solid black;
-        }
-        
-    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>  
+    <link rel='stylesheet' type='text/css' href='./css/style.css'> 
 </head>
 <body>
     
@@ -101,7 +13,7 @@
 
         <div id="box1">
             <div id="info">
-                <img src="profile.jpg" width="200px" style="border-radius: 50px;"><br>
+                <img src="./img/profile.jpg" width="200px" style="border-radius: 50px;"><br>
                 <p><span>Name</span>안웅선</p>
                 <p><span>Birth</span>&nbsp;&nbsp;1996.01.31&nbsp;<small id="age"></small></p>
                 <p><span>Phone</span>010-5043-4336</p>
@@ -120,90 +32,42 @@
 
         <div id="box2">
             👋<br>
-            안녕하세요. 백엔드 개발자 안웅선의 포트폴리오 페이지 입니다!<br>대학에서 불어를 전공했지만 졸업 후 현재는 개발공부를 하고 있습니다.<br><br>
+            안녕하세요. 백엔드 개발자 안웅선의 포트폴리오 페이지 입니다!<br>대학에서 불어를 전공했지만, 졸업 후 현재는 개발공부를 하고 있습니다.<br><br>
             🚀<br>클럽하우스 앱이 인기를 끄는 것을 보고 개발자라는 꿈을 가지게 되었습니다.<br>
             사용하기 쉽고 동시에 매력적으로 느껴질 수 있는 서비스를 만들고자 노력합니다.<br><br>
             💭<br>현재보다 더 나은 결과를 만들어 내기 위해 새로운 것들을 접하고 적용해보는 것을 주저하지 않으며 동료들과 서로의 지식을 공유하고 의논하는 것을 즐깁니다.
             <h3>projects : </h3>
             
             <div id="btn1">
-                <img src="Frame_1.svg" width="50%">
+                <img src="./img/Frame_1.svg" width="50%">
             </div>
 
             <div id="btn2">
-                <img src="Frame_2.svg" width="50%">
+                <img src="./img/Frame_2.svg" width="50%">
             </div>
 
             <div id="btn3">
-                <img src="Frame_3.svg" width="50%">
+                <img src="./img/Frame_3.svg" width="50%">
             </div>
         </div>
    </div>
+   <br>
    <div>
     <div id="prj_1">
-        <object type="application/pdf" data="./project_1.pdf#toolbar=0" width="80%" height="700">
-            <embed type="application/pdf" data="./project_1.pdf#toolbar=0"  width="80%" height="700">
+        <object type="application/pdf" data="./pdf/project_1.pdf#toolbar=0" width="80%" height="700">
         </object>
     </div>
 
     <div id="prj_2">
-        <object type="application/pdf" data="./project_2.pdf#toolbar=0" width="80%" height="700">
-            <embed type="application/pdf" data="./project_2.pdf#toolbar=0"  width="80%" height="700">
+        <object type="application/pdf" data="./pdf/project_2.pdf#toolbar=0" width="80%" height="700">
         </object>
     </div>
 
     <div id="prj_3">
-        <object type="application/pdf" data="./project_3.pdf#toolbar=0" width="80%" height="700">
-            <embed type="application/pdf" data="./project_3.pdf#toolbar=0"  width="80%" height="700">
+        <object type="application/pdf" data="./pdf/project_3.pdf#toolbar=0" width="80%" height="700">
         </object>
     </div>
 </div>
-<script>
-    const btn1 = document.querySelector("#btn1");
-    const btn2 = document.querySelector("#btn2");
-    const btn3 = document.querySelector("#btn3");
-    const img1 = btn1.querySelector("img");
-    const img2 = btn2.querySelector("img");
-    const img3 = btn3.querySelector("img");
-    const prj1 = document.querySelector("#prj_1");
-    const prj2 = document.querySelector("#prj_2");
-    const prj3 = document.querySelector("#prj_3");
-
-    const date = new Date();
-    const age = document.querySelector("#age");
-    const myAge = date.getFullYear() - 1996 + 1;
-    age.innerHTML = "("+myAge+")";
-
-    function show_prj_1() {
-        prj2.style.display = "none";
-        prj3.style.display = "none";
-        prj1.style.display = "block";
-        img2.style.border = "none";
-        img3.style.border = "none";
-        img1.style.border = "2px solid black";
-    }
-
-    function show_prj_2() {
-        prj1.style.display = "none";
-        prj3.style.display = "none";
-        prj2.style.display = "block";
-        img1.style.border = "none";
-        img3.style.border = "none";
-        img2.style.border = "2px solid black";
-    }
-
-    function show_prj_3() {
-        prj1.style.display = "none";
-        prj2.style.display = "none";
-        prj3.style.display = "block";
-        img1.style.border = "none";
-        img2.style.border = "none";
-        img3.style.border = "2px solid black";
-    }
-
-    btn1.addEventListener("click", show_prj_1);
-    btn2.addEventListener("click", show_prj_2);
-    btn3.addEventListener("click", show_prj_3);
-</script>
+<script src='./js/script.js'></script> 
 </body>
 </html>
