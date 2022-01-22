@@ -21,14 +21,14 @@ function to_prj1() {
     window.scrollTo(0, 680)
 }
 
-// 1번 프로젝트로부터 멀어질 때 
+// 1번 프로젝트 보이기/감추기 
 window.addEventListener("scroll", function() {
      let value = window.scrollY;
-     if(value>=630) {
+     if(value>=400) {
         prj1_div.style.animation = "prj_appe 1.5s ease-in-out forwards";
      } 
      
-     if(value>900) {
+     if(value>960) {
         prj1_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
         prj1_dis(); 
      }
@@ -41,17 +41,19 @@ function to_prj2() {
 }
 btn2.addEventListener("click", to_prj2)
 
-// 2번 프로젝트로부터 멀어질 때 
+// 2번 프로젝트 보이기/감추기 
 window.addEventListener("scroll", function() {
     let value = window.scrollY;
-    if(value>1100) {
+    if(value>1010) {
        prj2_div.style.animation = "prj_appe 1.5s ease-in-out forwards";
-    } else if(value<1100) {
+    } 
+    
+    if(value<1010) {
         prj2_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
         prj2_dis();
     } 
     
-    if(value>1600) {
+    if(value>1570) {
         prj2_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
         prj2_dis();
     }
@@ -63,14 +65,14 @@ function to_prj3() {
 }
 btn3.addEventListener("click", to_prj3)
 
-// 3번 프로젝트로부터 멀어질 때 
+// 3번 프로젝트 보이기/감추기  
 window.addEventListener("scroll", function() {
     let value = window.scrollY;
-    if(value>1600) {
+    if(value>1578) {
        prj3_div.style.animation = "prj_appe 1.5s ease-in-out forwards";
     } 
     
-    if(value<1700) {
+    if(value<1578) {
         prj3_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
         prj3_dis();
      } 
