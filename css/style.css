@@ -20,7 +20,7 @@
         margin-left: -800px;
         opacity: 10%;
     }
-}
+} 
 
         html {
             scroll-behavior: smooth;
@@ -166,10 +166,12 @@
             height: 500px;
             display: flex;
             margin-top: 100px;
+            margin-left: -800px;
             border: 1px solid grey;
             border-radius: 20px;
             overflow: hidden;
             background-color: #514F4F;
+            opacity: 10%;
         }
 
         #prj_1, #prj_2, #prj_3 {

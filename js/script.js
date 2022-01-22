@@ -24,12 +24,15 @@ function to_prj1() {
 // 1번 프로젝트로부터 멀어질 때 
 window.addEventListener("scroll", function() {
      let value = window.scrollY;
-     if(value>300) {
+     if(value>=630) {
         prj1_div.style.animation = "prj_appe 1.5s ease-in-out forwards";
-     } else if(value<300) {
-        prj1_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
-        prj1_dis();
      } 
+     
+     if(value>900) {
+        prj1_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
+        prj1_dis(); 
+     }
+
 });
 
 // 2번 프로젝트로 스크롤 이동
@@ -43,10 +46,12 @@ window.addEventListener("scroll", function() {
     let value = window.scrollY;
     if(value>1100) {
        prj2_div.style.animation = "prj_appe 1.5s ease-in-out forwards";
-    } else if(value>1600) {
+    } else if(value<1100) {
         prj2_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
         prj2_dis();
-    } else if(value<1100) {
+    } 
+    
+    if(value>1600) {
         prj2_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
         prj2_dis();
     }
@@ -63,7 +68,9 @@ window.addEventListener("scroll", function() {
     let value = window.scrollY;
     if(value>1600) {
        prj3_div.style.animation = "prj_appe 1.5s ease-in-out forwards";
-    } else if(value<1700) {
+    } 
+    
+    if(value<1700) {
         prj3_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
         prj3_dis();
      } 
