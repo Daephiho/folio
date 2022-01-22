@@ -1,45 +1,109 @@
-const btn1 = document.querySelector("#btn1");
-    const btn2 = document.querySelector("#btn2");
-    const btn3 = document.querySelector("#btn3");
-    const img1 = btn1.querySelector("img");
-    const img2 = btn2.querySelector("img");
-    const img3 = btn3.querySelector("img");
-    const prj1 = document.querySelector("#prj_1");
-    const prj2 = document.querySelector("#prj_2");
-    const prj3 = document.querySelector("#prj_3");
 
-    const date = new Date();
-    const age = document.querySelector("#age");
-    const myAge = date.getFullYear() - 1996 + 1;
-    age.innerHTML = "("+myAge+")";
+// 각 프로젝트 div
+const prj1_div = document.querySelector("#prj1_div");
+const prj2_div = document.querySelector("#prj2_div");
+const prj3_div = document.querySelector("#prj3_div");
 
-    function show_prj_1() {
-        prj2.style.display = "none";
-        prj3.style.display = "none";
-        prj1.style.display = "block";
-        img2.style.border = "none";
-        img3.style.border = "none";
-        img1.style.border = "2px solid black";
+// 각 프로젝트 pdf div
+const prj1 = document.querySelector("#prj_1");
+const prj2 = document.querySelector("#prj_2");
+const prj3 = document.querySelector("#prj_3");
+const prj_divs = document.querySelector("#prj_divs");
+
+// 나이 계산
+const date = new Date();
+const age = document.querySelector("#age");
+const myAge = date.getFullYear() - 1996 + 1;
+age.innerHTML = "("+myAge+")";
+
+// 1번 프로젝트로 스크롤 이동
+function to_prj1() {
+    window.scrollTo(0, 680)
+}
+
+// 1번 프로젝트로부터 멀어질 때 
+window.addEventListener("scroll", function() {
+     let value = window.scrollY;
+     if(value>300) {
+        prj1_div.style.animation = "prj_appe 1.5s ease-in-out forwards";
+     } else if(value<300) {
+        prj1_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
+        prj1_dis();
+     } 
+});
+
+// 2번 프로젝트로 스크롤 이동
+function to_prj2() {
+    window.scrollTo(0, 1290)
+}
+btn2.addEventListener("click", to_prj2)
+
+// 2번 프로젝트로부터 멀어질 때 
+window.addEventListener("scroll", function() {
+    let value = window.scrollY;
+    if(value>1100) {
+       prj2_div.style.animation = "prj_appe 1.5s ease-in-out forwards";
+    } else if(value>1600) {
+        prj2_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
+        prj2_dis();
+    } else if(value<1100) {
+        prj2_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
+        prj2_dis();
     }
+});
 
-    function show_prj_2() {
-        prj1.style.display = "none";
-        prj3.style.display = "none";
-        prj2.style.display = "block";
-        img1.style.border = "none";
-        img3.style.border = "none";
-        img2.style.border = "2px solid black";
-    }
+// 3번 프로젝트로 스크롤 이동
+function to_prj3() {
+    window.scrollTo(0, 1858)
+}
+btn3.addEventListener("click", to_prj3)
 
-    function show_prj_3() {
-        prj1.style.display = "none";
-        prj2.style.display = "none";
-        prj3.style.display = "block";
-        img1.style.border = "none";
-        img2.style.border = "none";
-        img3.style.border = "2px solid black";
-    }
+// 3번 프로젝트로부터 멀어질 때 
+window.addEventListener("scroll", function() {
+    let value = window.scrollY;
+    if(value>1600) {
+       prj3_div.style.animation = "prj_appe 1.5s ease-in-out forwards";
+    } else if(value<1700) {
+        prj3_div.style.animation = "prj_dis 1.5s ease-in-out forwards";
+        prj3_dis();
+     } 
+});
 
-    btn1.addEventListener("click", show_prj_1);
-    btn2.addEventListener("click", show_prj_2);
-    btn3.addEventListener("click", show_prj_3);
+//
+function prj1_show() {
+    prj1.style.display = "block";
+}
+
+function prj1_dis() {
+    prj1.style.display = "none";
+}
+
+//
+function prj2_show() {
+    prj2.style.display = "block";
+}
+
+function prj2_dis() {
+    prj2.style.display = "none";
+}
+
+//
+function prj3_show() {
+    prj3.style.display = "block";
+}
+
+function prj3_dis() {
+    prj3.style.display = "none";
+}
+
+function to_top() {
+    window.scrollTo(0, 0)
+}
+
+function scroll_top() {
+    window.scrollBy(0, -600)
+}
+
+function scroll_bottom() {
+    window.scrollBy(0, 630)
+}

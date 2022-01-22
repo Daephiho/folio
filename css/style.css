@@ -1,8 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
+@keyframes prj_appe {
+    from{
+        margin-left: -800px;
+        opacity: 10%;
+    }
+    to{
+        margin-left: 203px;
+        opacity: 100%;
+    }
+}
+
+@keyframes prj_dis {
+    from{
+        margin-left: 203px;
+        opacity: 100%;
+    }
+    to{
+        margin-left: -800px;
+        opacity: 10%;
+    }
+}
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Noto Sans KR', sans-serif;
             margin-bottom: 100px;
+            background-color: #252424;
+            color: #fff;
+        }
+
+        body a:hover, body button:hover {
+            cursor: pointer;
         }
 
         #main_div {
@@ -14,6 +46,7 @@
             margin-top: 100px;
             border: 1px solid grey;
             border-radius: 20px;
+            background-color: #514F4F;
         }
 
         #box1 {
@@ -24,33 +57,63 @@
             border-right: 1px solid grey;
         }
 
+        #info {
+            width: 370px;
+        }
+
         #info span {
-            color: navy;
+            color: wheat;
             margin-right: 10px;
         }
 
-        #git {
-            color: navy;
-            text-align: center;
+        #info a:hover {
+            filter: invert(100%);
+        }
+
+        #info img:first-child {
+            width: 200px;
+            border-radius: 50px;
+        }
+
+        #info img:last-child {
+            width: 20%;
+            background-color: white; 
+            border-radius: 10px;
         }
 
         #know {
-            margin-top: 150px;
-            margin-left: 40px;
+            margin-top: 100px;
+            padding-left: 50px;
         }
 
         #know span {
-            background-color: grey;
-            color: #fff;
+            display: inline-block;
+            width: 100px;
+            height: 25px;
+            text-align: center;
+            color: black;
+            border: 1px solid gray;
             border-radius: 5px;
             margin: 5px;
             padding: 2px;
         }
 
+        .fami {
+            background: linear-gradient(to right, white 70%, grey 30%);
+        }
+
+        .soso {
+            background: linear-gradient(to right, white 50%, grey 50%);
+        }
+
+        .tried {
+            background: linear-gradient(to left, grey 90%, white 10%);
+        }
+
         #box2 {
             flex: 1;
             margin: 20px 15px;
-            padding: 50px 10px 20px 15px;
+            padding: 30px 10px 20px 15px;
         }
 
         #btn1, #btn2, #btn3 {
@@ -69,12 +132,66 @@
             transition: all 0.2s ease-in-out;
         }
 
+        #prjs {
+            line-height: 30px;
+       }
+
+        #prjs img {
+            margin-left: 50px;
+            border: 2px solid grey;
+        }
+
+        #prjs span {
+            font-size: 15px;
+            padding: 20px;
+        }
+
+        #prjs h2 {
+            text-align: center;
+        }
+
+        #prjs button {
+            margin-left: 730px; 
+            background-color: black; 
+            color: white;
+            border: none;
+        }
+
+        #prjs a {
+            border-bottom: 1px solid #fff;
+        }
+
+        #prj1_div, #prj2_div, #prj3_div  {
+            width: 1000px;
+            height: 500px;
+            display: flex;
+            margin-top: 100px;
+            border: 1px solid grey;
+            border-radius: 20px;
+            overflow: hidden;
+            background-color: #514F4F;
+        }
+
         #prj_1, #prj_2, #prj_3 {
             display: none;
-            margin-left: 250px;
+            position: absolute;
+            left: 10px;
+            width: 750px;
+            height: 400px;
         }
 
         object {
             border: 3px solid black;
+            border-radius: 10px;
         }
+        
+        #fixed {
+            position: fixed;
+            top: 350px;
+            right: 40px;
+            text-align: center;
+        }
+
+
+        
         
