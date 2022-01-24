@@ -1,26 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
-@keyframes prj_appe {
-    from{
-        margin-left: -800px;
-        opacity: 10%;
+
+@media screen and (max-width: 1440px) { 
+    @keyframes prj_appe {
+        from{
+            margin-left: -800px;
+            opacity: 10%;
+        }
+        to{
+            margin-left: 203px;
+            opacity: 100%;
+        }
     }
-    to{
-        margin-left: 203px;
-        opacity: 100%;
-    }
+    
+    @keyframes prj_dis {
+        from{
+            margin-left: 203px;
+            opacity: 100%;
+        }
+        to{
+            margin-left: -800px;
+            opacity: 10%;
+        }
+    } 
 }
 
-@keyframes prj_dis {
-    from{
-        margin-left: 203px;
-        opacity: 100%;
+@media screen and (max-width: 1920px) { 
+    @keyframes prj_appe {
+        from{
+            margin-left: -800px;
+            opacity: 10%;
+        }
+        to{
+            margin-left: 445px;
+            opacity: 100%;
+        }
     }
-    to{
-        margin-left: -800px;
-        opacity: 10%;
-    }
-} 
+    
+    @keyframes prj_dis {
+        from{
+            margin-left: 445px;
+            opacity: 100%;
+        }
+        to{
+            margin-left: -800px;
+            opacity: 10%;
+        }
+    } 
+}
 
         html {
             scroll-behavior: smooth;
