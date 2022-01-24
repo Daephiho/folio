@@ -49,6 +49,30 @@
     } 
 }
 
+@media screen and (min-width: 2000px) { 
+    @keyframes prj_appe {
+        from{
+            margin-left: -800px;
+            opacity: 10%;
+        }
+        to{
+            margin-left: 680px;
+            opacity: 100%;
+        }
+    }
+    
+    @keyframes prj_dis {
+        from{
+            margin-left: 680px;
+            opacity: 100%;
+        }
+        to{
+            margin-left: -800px;
+            opacity: 10%;
+        }
+    } 
+}
+
         html {
             scroll-behavior: smooth;
         }
