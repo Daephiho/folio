@@ -143,22 +143,11 @@
             height: 25px;
             text-align: center;
             color: black;
+            background-color: blanchedalmond;
             border: 1px solid gray;
             border-radius: 5px;
             margin: 5px;
             padding: 2px;
-        }
-
-        .fami {
-            background: linear-gradient(to right, white 70%, grey 30%);
-        }
-
-        .soso {
-            background: linear-gradient(to right, white 50%, grey 50%);
-        }
-
-        .tried {
-            background: linear-gradient(to left, grey 90%, white 10%);
         }
 
         #box2 {
