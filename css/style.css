@@ -134,13 +134,14 @@
 
         #know {
             margin-top: 100px;
-            padding-left: 50px;
+            padding-left: 40px;
         }
 
         #know span {
             display: inline-block;
-            width: 100px;
+            width: 80px;
             height: 25px;
+            font-size: 15px;
             text-align: center;
             color: black;
             background-color: blanchedalmond;
