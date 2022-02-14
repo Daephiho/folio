@@ -227,8 +227,12 @@
                 margin-right: 10px;
             }
     
-            #info a:hover {
+            #info .icon_github:hover {
                 filter: invert(100%);
+            }
+
+            #info .icon_blog:hover {
+                filter: sepia(100%);
             }
     
             #info img:first-child {
