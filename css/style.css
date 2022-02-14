@@ -1,7 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 
 /* 데스크탑 */
-    @media screen and (width: 1440px) { 
+@media screen and (min-width: 1280px) { 
+    @keyframes prj_appe {
+        from{
+            margin-left: -800px;
+            opacity: 10%;
+        }
+        to{
+            margin-left: 120px;
+            opacity: 100%;
+        }
+    }
+    
+    @keyframes prj_dis {
+        from{
+            margin-left: 120px;
+            opacity: 100%;
+        }
+        to{
+            margin-left: -800px;
+            opacity: 10%;
+        }
+    } 
+
+    body {
+        font-family: 'Noto Sans KR', sans-serif;
+        margin-bottom: 100px;
+        background-color: #252424;
+        color: #fff;
+    }
+}
+
+    @media screen and (min-width: 1440px) { 
         @keyframes prj_appe {
             from{
                 margin-left: -800px;
@@ -23,23 +54,70 @@
                 opacity: 10%;
             }
         } 
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-bottom: 100px;
+            background-color: #252424;
+            color: #fff;
+        }
     }
     
-    @media screen and (width: 1920px) { 
+    @media screen and (min-width: 1920px) { 
         @keyframes prj_appe {
             from{
-                margin-left: -800px;
+                margin-left: -50%;
                 opacity: 10%;
             }
             to{
-                margin-left: 445px;
+                margin-left: 23.5%;
                 opacity: 100%;
             }
         }
         
         @keyframes prj_dis {
             from{
-                margin-left: 445px;
+                margin-left: 23.5%;
+                opacity: 100%;
+            }
+            to{
+                margin-left: -50%;
+                opacity: 10%;
+            }
+        } 
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-bottom: 100px;
+            background-color: #252424;
+            color: #fff;
+        }
+
+        #prj_1, #prj_2, #prj_3 {
+            display: none;
+            position: absolute;
+            left: 10px;
+            width: 750px;
+            height: 400px;
+            margin-left: 250px;
+        }
+    }
+    
+    @media screen and (min-width: 2560px) { 
+        @keyframes prj_appe {
+            from{
+                margin-left: -800px;
+                opacity: 10%;
+            }
+            to{
+                margin-left: 760px;
+                opacity: 100%;
+            }
+        }
+        
+        @keyframes prj_dis {
+            from{
+                margin-left: 760px;
                 opacity: 100%;
             }
             to{
@@ -47,23 +125,39 @@
                 opacity: 10%;
             }
         } 
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-bottom: 400px;
+            background-color: #252424;
+            color: #fff;
+        }
+
+        #prj_1, #prj_2, #prj_3 {
+            display: none;
+            position: absolute;
+            left: 10px;
+            width: 750px;
+            height: 400px;
+            margin-left: 560px;
+        }
     }
-    
-    @media screen and (min-width: 2000px) { 
-        @keyframes prj_appe {
+
+    @media screen and (min-width: 3400px) { 
+         @keyframes prj_appe {
             from{
                 margin-left: -800px;
                 opacity: 10%;
             }
             to{
-                margin-left: 680px;
+                margin-left: 1200px;
                 opacity: 100%;
             }
         }
         
         @keyframes prj_dis {
             from{
-                margin-left: 680px;
+                margin-left: 1200px;
                 opacity: 100%;
             }
             to{
@@ -71,18 +165,34 @@
                 opacity: 10%;
             }
         } 
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin-bottom: 800px;
+            background-color: #252424;
+            color: #fff;
+        }
+
+        #prj_1, #prj_2, #prj_3 {
+            display: none;
+            position: absolute;
+            left: 10px;
+            width: 750px;
+            height: 400px;
+            margin-left: 1000px;
+        }
     }
     
             html {
                 scroll-behavior: smooth;
             }
     
-            body {
+            /* body {
                 font-family: 'Noto Sans KR', sans-serif;
                 margin-bottom: 100px;
                 background-color: #252424;
                 color: #fff;
-            }
+            } */
     
             body a:hover, body button:hover {
                 cursor: pointer;
